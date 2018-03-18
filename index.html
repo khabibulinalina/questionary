@@ -1,0 +1,181 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Тестовое задание</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="logo-container">
+        <img src="logo.png"/>
+    </div>
+    <img class="body-element1" src="img_back1.png">
+    <img class="body-element2" src="img_back2.png">
+
+</div>
+<div class="container">
+    <div class="user-block">
+        <div class="block">
+            <p class="title">Полное ФИО </p>
+            <input type="text" class="description" id="fio">
+        </div>
+        <div class="block">
+            <p class="title">Год рождения </p>
+            <input type="text" class="description" id="dateBirthday">
+        </div>
+        <div class="block">
+            <p class="title">Место жительства </p>
+            <input type="text" class="description" id="home">
+        </div>
+        <div class="block">
+            <p class="title">Скайп</p>
+            <input type="text" class="description" id="skype">
+        </div>
+        <div class="block">
+            <p class="title">Почта</p>
+            <input type="text" class="description" id="mail">
+        </div>
+    </div>
+    <div class="checkbox-block">
+        <p class="title">Расскажите о себе чекбоксами</p>
+        <p>Отметьте чекбоксами пункты, которые соответствуют вашим скиллам.
+            Отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей.
+            Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+        <div class="row">
+
+            <div class="col-md-4 col-xs-4">
+                <ul>
+                    <li>
+                        <input type="checkbox" id="html">
+                        <label for="html">HTML</label>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" id="css">
+                        <label for="css">Css</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="js">
+                        <label for="js">Js</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="bootstrap">
+                        <label for="bootstrap">Bootstrap3</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <ul>
+                    <li>
+                        <input type="checkbox" id="jquery">
+                        <label for="jquery">JQuery</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="gulp">
+                        <label for="gulp">GULP</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="saas">
+                        <label for="saas">Saass</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="bem">
+                        <label for="bem">БЭМ</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <ul>
+                    <li>
+                        <input type="checkbox" id="webpack">
+                        <label for="webpack">WebPack</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="es6">
+                        <label for="es6">ES6</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="vuejs">
+                        <label for="vuejs">Vuejs</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="nuxtjs">
+                        <label for="nuxtjs">Nuxtjs</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="slider-block">
+        <p class="title">Урвоень владения Java Script</p>
+
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider-cont" id="myRange">
+        </div>
+        <div>
+            <div class="range1">
+                <span>Не владею</span>
+            </div>
+            <div class="range2">
+                <span>Использую готовые решения</span>
+            </div>
+            <div class="range3">
+                <span>Использую готовые решения<br> и умею переделывать</span>
+                <span>Пишу сложный JS с нуля</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="date-block">
+        <div class="block">
+            <p class="title">Дата заполнения </p>
+            <input type="text" class="description" id="curDate">
+        </div>
+    </div>
+
+</div>
+<script>
+    var slider = document.getElementById("myRange");
+
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value; // Display the default slider value
+
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function () {
+        output.innerHTML = this.value;
+    }
+</script>
+<script>
+    document.getElementById('fio').value = 'Хабибулина Алина Руслановна';
+    document.getElementById('dateBirthday').value = '1995';
+    document.getElementById('home').value = 'г.Томск';
+    document.getElementById('skype').value = 'live:khabibulinalina';
+    document.getElementById('mail').value = 'khabibulinalina@gmail.com';
+    document.getElementById('html').click();
+    document.getElementById('css').click();
+    document.getElementById('js').click();
+    document.getElementById('bootstrap').click();
+    document.getElementById('jquery').click();
+    document.getElementById('curDate').value = '18.03.2018';
+    document.getElementById('myRange').value=25;
+
+
+</script>
+
+</body>
+</html>

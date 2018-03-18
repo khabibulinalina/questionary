@@ -1,0 +1,221 @@
+body{
+    font-family: 'Roboto', sans-serif!important;
+    width: 1280px!important;
+    margin: 0 auto!important;
+    font-size: 14px!important;
+    position: relative;
+}
+.container{
+    width: 866px!important;
+    margin: 0 auto;
+    background: white;
+    padding: 0!important;
+}
+.logo-container{
+    width: 418px;
+    margin: 132px auto 103px;
+}
+.logo-container img{
+    width: 100%;
+}
+.body-element1{
+    position: absolute;
+    top: 230px;
+    z-index: -1;
+}
+.body-element2{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+.user-block{
+    padding: 50px;
+    box-shadow: 0px -1px 4px 1px #f4f4f4;
+    z-index: 1;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.user-block .block{
+    margin-bottom: 40px;
+    position:relative;
+    overflow:hidden;
+}
+.user-block .block:last-child{
+    margin-bottom:0;
+}
+.user-block .block p,
+.date-block .block p{
+    display: inline-block;
+}
+
+.user-block .block .description,
+.date-block .block .description{
+    margin-left: 4%;
+    display:  inline-block;
+    border-bottom: 2px solid #866887;
+    border-left:  0;
+    border-right:  0;
+    border-top:  0;
+}
+.user-block .block .description:focus,
+.date-block .block .description:focus{
+    outline:  none;
+}
+input[type="text"]{
+    font-family: 'Roboto Light'!important;
+    font-size: 25px;
+}
+.user-block .block:nth-child(1) .description{
+    width: 81%;
+    border-bottom: 2px solid #866887;
+    border-left:  0;
+    border-right:  0;
+    border-top:  0;
+}
+.user-block .block:nth-child(2) .description{
+    width: 79%;
+}
+
+.user-block .block:nth-child(3) .description{
+    width: 74%;
+}
+
+.user-block .block:nth-child(4) .description,
+.user-block .block:nth-child(5) .description{
+    width: 88%;
+}
+
+
+/*.user-block .block .description:after{
+    content:"";
+    display:block;
+    width:100%;
+    position:absolute;
+    border-bottom: 2px solid #00214d;
+}*/
+.checkbox-block{
+    padding: 60px 50px;
+}
+p.title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.checkbox-block .row{
+    margin-top: 20px;
+}
+.checkbox-block ul{
+    padding: 0;
+    list-style: none;
+}
+.checkbox-block ul li{
+    margin-bottom: 15px;
+}
+.checkbox-block ul li label{
+    font-weight: bold;
+    margin-left: -1px;
+}
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"] + label{
+    cursor: pointer;
+}
+input[type="checkbox"] + label::before{
+    content: "";
+    display: inline-block;
+    height: 27px;
+    width: 25px;
+    margin: 0 5px 0 0;
+    background-image: url(../check_box.png);
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: "";
+    display: inline-block;
+    height: 27px;
+    width: 25px;
+    margin: 0 5px 0 0;
+    background-image: url(../checked_block.png);
+    background-repeat: no-repeat;}
+
+input[type="checkbox"]:checked:disabled + label::before {
+    content: "";
+    display: inline-block;
+    height: 27px;
+    width: 25px;
+    margin: 0 5px 0 0;
+    background-image: url(../checked_block.png);
+    background-repeat: no-repeat;
+}
+.date-block .block .description{
+    width: 33%;
+
+}
+
+.slidecontainer {
+    width: 100%;
+}
+.slider-block, .date-block{
+    margin-bottom:60px;
+    padding: 0px 50px 60px;
+}
+.slider-block p.title{
+    margin-bottom:30px;
+}
+
+.slider-cont {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider-cont::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border: 10px solid transparent;	border-top: 15px solid #866887;
+}
+
+.slider-cont::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #866887;
+    cursor: pointer;
+}
+.slider-block span{
+    position:absolute;
+    bottom:-30px;
+}
+.slider-block .range3 span:first-child{
+    bottom: -49px;
+}
+.slider-block .range3 span:last-child{
+    right:0;
+}
+.slider-block div div{
+    float:left;
+    display:  block;
+    min-height: 18px;
+    border-top:3px solid #866887;
+    border-left:3px solid #866887;
+    position:relative;
+}
+.slider-block .range1{
+    width:20%;
+}
+.slider-block .range2{
+    width:30%;
+}
+.slider-block .range3{
+    width:50%;
+    border-right:2px solid #866887;
+
+}
