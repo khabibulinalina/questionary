@@ -66,23 +66,23 @@ input[type="text"]{
     font-size: 25px;
 }
 .user-block .block:nth-child(1) .description{
-    width: 81%;
+    width: 80%;
     border-bottom: 2px solid #866887;
     border-left:  0;
     border-right:  0;
     border-top:  0;
 }
 .user-block .block:nth-child(2) .description{
-    width: 79%;
+    width: 78%;
 }
 
 .user-block .block:nth-child(3) .description{
-    width: 74%;
+    width: 73%;
 }
 
 .user-block .block:nth-child(4) .description,
 .user-block .block:nth-child(5) .description{
-    width: 88%;
+    width: 87%;
 }
 
 
